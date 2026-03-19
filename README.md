@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# 🐾 Pet Shop Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native (Expo) based mobile application that allows users to
+upload pet details, view pets, and manage a shopping cart using global
+state management.
 
-## Get started
+## 📱 Platform
 
-1. Install dependencies
+-   React Native (Expo)
+-   Android & iOS
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+-   Upload pet image (Camera / Gallery)
+-   Form validation (Zod)
+-   API integration (POST & GET)
+-   Add/remove cart items
+-   Zustand global state
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Setup
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+``` bash
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan QR with Expo Go.
 
-## Learn more
+## 📦 Libraries
 
-To learn more about developing your project with Expo, look at the following resources:
+-   expo
+-   react-navigation
+-   zustand
+-   axios
+-   zod
+-   react-hook-form
+-   expo-image-picker
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🧠 Architecture
 
-## Join the community
+Feature-based structure with separation of UI, state, and services.
 
-Join our community of developers creating universal apps.
+## 🌐 APIs
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+-   POST: https://reqres.in/api/users
+-   GET: https://dog.ceo/api/breeds/image/random
+
+## ❓ Why APIs
+
+-   ReqRes: mock API for testing
+-   Dog API: dynamic images
+
+## ⚠️ Note
+
+ReqRes may block requests; app handles failures gracefully.
+
+## ✨ Highlights
+
+-   Clean architecture
+-   Validation
+-   State management
